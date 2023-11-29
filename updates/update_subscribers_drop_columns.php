@@ -1,14 +1,14 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe\Updates;
+namespace SitiosAgenciaDigital\Subscribe\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
 use DB;
-use sitiosagenciadigital\subscribe\Models\Category;
-use sitiosagenciadigital\subscribe\Models\Subscriber;
-// use sitiosagenciadigital\LaravelTopping\Traits\MigrationHelper;
+use SitiosAgenciaDigital\Subscribe\Models\Category;
+use SitiosAgenciaDigital\Subscribe\Models\Subscriber;
+// use SitiosAgenciaDigital\LaravelTopping\Traits\MigrationHelper;
 
 class UpdateSubscribersDropColumns extends Migration
 {

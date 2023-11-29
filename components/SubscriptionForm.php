@@ -1,9 +1,9 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe\Components;
+namespace SitiosAgenciaDigital\Subscribe\Components;
 
 use Cms\Classes\ComponentBase;
-use sitiosagenciadigital\subscribe\Models\{ Subscription, Category, Subscriber };
+use SitiosAgenciaDigital\Subscribe\Models\{ Subscription, Category, Subscriber };
 use Lang;
 use October\Rain\Database\ModelException;
 

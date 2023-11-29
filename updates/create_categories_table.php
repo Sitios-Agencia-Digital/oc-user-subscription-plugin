@@ -1,6 +1,6 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe\Updates;
+namespace SitiosAgenciaDigital\Subscribe\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;

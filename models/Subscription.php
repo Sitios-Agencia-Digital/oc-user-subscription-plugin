@@ -1,8 +1,8 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe\Models;
+namespace SitiosAgenciaDigital\Subscribe\Models;
 
-use sitiosagenciadigital\subscribe\Models\Subscriber;
+use SitiosAgenciaDigital\Subscribe\Models\Subscriber;
 use Model;
 use Mail;
 

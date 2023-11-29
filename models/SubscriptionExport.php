@@ -1,8 +1,8 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe\Models;
+namespace SitiosAgenciaDigital\Subscribe\Models;
 
-use sitiosagenciadigital\subscribe\Models\Subscription;
+use SitiosAgenciaDigital\Subscribe\Models\Subscription;
 use Illuminate\Support\Facades\Lang;
 
 class SubscriptionExport extends \Backend\Models\ExportModel

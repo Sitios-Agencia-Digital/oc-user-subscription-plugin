@@ -1,11 +1,11 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe;
+namespace SitiosAgenciaDigital\Subscribe;
 
 use Backend;
 use System\Classes\PluginBase;
 use Event;
-use sitiosagenciadigital\subscribe\Components\SubscriptionForm;
+use SitiosAgenciaDigital\Subscribe\Components\SubscriptionForm;
 
 /**
  * UserConnect Plugin Information File
@@ -68,7 +68,7 @@ class Plugin extends PluginBase
                 'label'       => 'sitiosagenciadigital.subscribe::lang.settings.label',
                 'description' => 'sitiosagenciadigital.subscribe::lang.settings.description',
                 'icon'        => 'icon-cog',
-                'class'       => 'sitiosagenciadigital\subscribe\Models\Settings',
+                'class'       => 'SitiosAgenciaDigital\Subscribe\Models\Settings',
                 'order'       => 500,
                 'keywords'    => 'subscriptions'
             ]
@@ -81,29 +81,29 @@ class Plugin extends PluginBase
         return [
             'userconnect' => [
                 'label'       => 'sitiosagenciadigital.subscribe::lang.plugin.name',
-                'url'         => Backend::url('sitiosagenciadigital\subscribe/subscriptions'),
+                'url'         => Backend::url('SitiosAgenciaDigital\Subscribe/subscriptions'),
                 'permissions' => ['sitiosagenciadigital.subscribe.manage_settings'],
                 'icon'        => 'icon-rss-square',
                 'sideMenu' => [
                     'subscriptions' => [
                         'label'       => 'sitiosagenciadigital.subscribe::lang.subscriptions.menu_label',
                         'icon'        => 'icon-volume-up',
-                        'url'         => Backend::url('sitiosagenciadigital\subscribe/subscriptions'),
+                        'url'         => Backend::url('SitiosAgenciaDigital\Subscribe/subscriptions'),
                     ],
                     'subscribers' => [
                         'label'       => 'sitiosagenciadigital.subscribe::lang.subscribers.menu_label',
                         'icon'        => 'icon-users',
-                        'url'         => Backend::url('sitiosagenciadigital\subscribe/subscribers'),
+                        'url'         => Backend::url('SitiosAgenciaDigital\Subscribe/subscribers'),
                     ],
                     // 'categories' => [
                     //     'label'       => 'sitiosagenciadigital.subscribe::lang.categories.menu_label',
                     //     'icon'        => 'icon-list',
-                    //     'url'         => Backend::url('sitiosagenciadigital\subscribe/categories'),
+                    //     'url'         => Backend::url('SitiosAgenciaDigital\Subscribe/categories'),
                     // ],
                     'settings' => [
                         'label'       => 'sitiosagenciadigital.subscribe::lang.settings.menu_label',
                         'icon'        => 'icon-cog',
-                        'url'         => Backend::url('system/settings/update/sitiosagenciadigital\subscribe/settings'),
+                        'url'         => Backend::url('system/settings/update/SitiosAgenciaDigital\Subscribe/settings'),
                         'permissions' => ['sitiosagenciadigital.subscribe.manage_settings'],
                     ]
                 ]

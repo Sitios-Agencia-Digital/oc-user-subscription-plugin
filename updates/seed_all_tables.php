@@ -1,8 +1,8 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe\Updates;
+namespace SitiosAgenciaDigital\Subscribe\Updates;
 
-use sitiosagenciadigital\subscribe\Models\Category;
+use SitiosAgenciaDigital\Subscribe\Models\Category;
 use October\Rain\Database\Updates\Seeder;
 
 class SeedAllTables extends Seeder

@@ -1,6 +1,6 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe\Models;
+namespace SitiosAgenciaDigital\Subscribe\Models;
 
 use Model;
 use Cms\Classes\Page;

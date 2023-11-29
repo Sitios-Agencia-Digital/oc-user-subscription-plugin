@@ -1,6 +1,6 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe\Controllers;
+namespace SitiosAgenciaDigital\Subscribe\Controllers;
 
 use BackendMenu;
 

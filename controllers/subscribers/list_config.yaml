@@ -3,8 +3,8 @@
 # ===================================
 
 title: fytinnovations.userconnect::lang.subscribers.list_title
-list: ~/plugins/sitiosagenciadigital\subscribe/models/subscriber/columns.yaml
-modelClass: sitiosagenciadigital\subscribe\Models\Subscriber
+list: ~/plugins/SitiosAgenciaDigital\Subscribe/models/subscriber/columns.yaml
+modelClass: SitiosAgenciaDigital\Subscribe\Models\Subscriber
 noRecordsMessage: backend::lang.list.no_records
 recordsPerPage: 10
 showCheckboxes: true
