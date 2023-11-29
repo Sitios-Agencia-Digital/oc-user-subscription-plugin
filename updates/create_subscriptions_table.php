@@ -1,6 +1,6 @@
 <?php
 
-namespace Fytinnovations\Userconnect\Updates;
+namespace sitiosagenciadigital\subscribe\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
@@ -10,7 +10,7 @@ class CreateSubscriptionsTable extends Migration
 {
     public function up()
     {
-        Schema::create('fytinnovations_userconnect_subscriptions', function (Blueprint $table) {
+        Schema::create('sad_subscribe_subscriptions', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('subscriber_id')->unsigned();
@@ -22,18 +22,18 @@ class CreateSubscriptionsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table('fytinnovations_userconnect_subscriptions', function (Blueprint $table) {
-            $table->foreign('subscriber_id')->references('id')->on('fytinnovations_userconnect_subscribers');
-            $table->foreign('category_id')->references('id')->on('fytinnovations_userconnect_categories');
+        Schema::table('sad_subscribe_subscriptions', function (Blueprint $table) {
+            $table->foreign('subscriber_id')->references('id')->on('sad_subscribe_subscribers');
+            $table->foreign('category_id')->references('id')->on('sad_subscribe_categories');
         });
     }
 
     public function down()
     {
-        Schema::table('fytinnovations_userconnect_subscriptions', function (Blueprint $table) {
-            $table->dropForeign('fytinnovations_userconnect_subscriptions_subscriber_id_foreign');
-            $table->dropForeign('fytinnovations_userconnect_subscriptions_category_id_foreign');
+        Schema::table('sad_subscribe_subscriptions', function (Blueprint $table) {
+            $table->dropForeign('sad_subscribe_subscriptions_subscriber_id_foreign');
+            $table->dropForeign('sad_subscribe_subscriptions_category_id_foreign');
         });
-        Schema::dropIfExists('fytinnovations_userconnect_subscriptions');
+        Schema::dropIfExists('sad_subscribe_subscriptions');
     }
 }

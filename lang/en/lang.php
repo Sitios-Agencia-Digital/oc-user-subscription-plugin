@@ -2,7 +2,7 @@
 
 return [
     'plugin' => [
-        'name' => 'User Connect',
+        'name' => 'Subscribers',
         'description' => 'Creating and manage email subscription lists with ease.',
     ],
     'permissions' => [

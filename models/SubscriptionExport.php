@@ -1,8 +1,8 @@
 <?php
 
-namespace Fytinnovations\UserConnect\Models;
+namespace sitiosagenciadigital\subscribe\Models;
 
-use Fytinnovations\Userconnect\Models\Subscription;
+use sitiosagenciadigital\subscribe\Models\Subscription;
 use Illuminate\Support\Facades\Lang;
 
 class SubscriptionExport extends \Backend\Models\ExportModel
@@ -21,7 +21,7 @@ class SubscriptionExport extends \Backend\Models\ExportModel
                 'category' => $subscription->category->name,
                 'is_verified' => $subscription->is_verified,
                 'verified_at' => $subscription->verified_at ? $subscription->verified_at->diffForHumans() :
-                    Lang::get('fytinnovations.userconnect::lang.subscription.not_verified_yet'),
+                    Lang::get('sitiosagenciadigital.subscribe::lang.subscription.not_verified_yet'),
                 'created_at' => $subscription->created_at->format('Y-m-d H:i:s'),
                 'updated_at' => $subscription->updated_at->format('Y-m-d H:i:s'),
             ]);

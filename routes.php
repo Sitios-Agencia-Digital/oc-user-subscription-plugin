@@ -1,7 +1,7 @@
 <?php
 
 use Cms\Classes\Controller;
-use Fytinnovations\UserConnect\Models\{Subscription, Settings, Subscriber};
+use sitiosagenciadigital\subscribe\Models\{Subscription, Settings, Subscriber};
 
 Route::get('/email_verification/{email}/{verification_key}', function ($email, $verification_key) {
 

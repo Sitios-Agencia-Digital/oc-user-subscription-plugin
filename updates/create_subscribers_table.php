@@ -3,13 +3,12 @@
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
-use DB;
 
 class CreateSubscribersTable extends Migration
 {
     public function up()
     {
-        Schema::create('fytinnovations_userconnect_subscribers', function(Blueprint $table) {
+        Schema::create('sad_subscribe_subscribers', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('email')->unique();
@@ -23,6 +22,6 @@ class CreateSubscribersTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('fytinnovations_userconnect_subscribers');
+        Schema::dropIfExists('sad_subscribe_subscribers');
     }
 }

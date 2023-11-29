@@ -1,8 +1,8 @@
 {
-    "name": "fytinnovations/oc-userconnect-plugin",
+    "name": "sitiosagenciadigital/oc-subscription-plugin",
     "type": "october-plugin",
     "description": "Creating and manage email subscription lists with ease.",
-    "homepage": "https://octobercms.com/plugin/fytinnovations-userconnect",
+    "homepage": "https://sitios.uy/",
     "keywords": [
         "october",
         "octobercms",
@@ -10,11 +10,7 @@
     ],
     "authors": [
         {
-            "name": "FYT Innovations",
-            "email": "hello@fytinnovations.com"
+            "name": "Sitios Agencia Digital"
         }
-    ],
-    "require": {
-        "fytinnovations/laravel-topping": "*"
-    }
+    ]
 }

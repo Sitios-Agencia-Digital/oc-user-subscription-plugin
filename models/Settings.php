@@ -1,6 +1,6 @@
 <?php
 
-namespace Fytinnovations\UserConnect\Models;
+namespace sitiosagenciadigital\subscribe\Models;
 
 use Model;
 use Cms\Classes\Page;
@@ -9,7 +9,7 @@ class Settings extends Model
 {
     public $implement = ['System.Behaviors.SettingsModel'];
 
-    public $settingsCode = 'fytinnovations_userconnect_settings';
+    public $settingsCode = 'sad_subscribe_settings';
 
     public $settingsFields = 'fields.yaml';
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Fytinnovations\Userconnect\Components;
+namespace sitiosagenciadigital\subscribe\Components;
 
 use Cms\Classes\ComponentBase;
-use Fytinnovations\UserConnect\Models\{Subscription, Category, Subscriber};
+use sitiosagenciadigital\subscribe\Models\{ Subscription, Category, Subscriber };
 use Lang;
 use October\Rain\Database\ModelException;
 
@@ -44,8 +44,8 @@ class SubscriptionForm extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'fytinnovations.userconnect::lang.components.subscriptionform.name',
-            'description' => 'fytinnovations.userconnect::lang.components.subscriptionform.description'
+            'name'        => 'sitiosagenciadigital.subscribe::lang.components.subscriptionform.name',
+            'description' => 'sitiosagenciadigital.subscribe::lang.components.subscriptionform.description'
         ];
     }
 
@@ -53,20 +53,20 @@ class SubscriptionForm extends ComponentBase
     {
         return [
             'subscribeButtonText' => [
-                'title' => 'fytinnovations.userconnect::lang.components.subscriptionform.properties.subscribeButtonText.title',
-                'description' => 'fytinnovations.userconnect::lang.components.subscriptionform.properties.subscribeButtonText.description',
-                'default' => Lang::get('fytinnovations.userconnect::lang.components.subscriptionform.properties.subscribeButtonText.default'),
+                'title' => 'sitiosagenciadigital.subscribe::lang.components.subscriptionform.properties.subscribeButtonText.title',
+                'description' => 'sitiosagenciadigital.subscribe::lang.components.subscriptionform.properties.subscribeButtonText.description',
+                'default' => Lang::get('sitiosagenciadigital.subscribe::lang.components.subscriptionform.properties.subscribeButtonText.default'),
                 'type' => 'string',
             ],
             'successMessage' => [
-                'title' => 'fytinnovations.userconnect::lang.components.subscriptionform.properties.successMessage.title',
-                'description' => 'fytinnovations.userconnect::lang.components.subscriptionform.properties.successMessage.description',
-                'default' => Lang::get('fytinnovations.userconnect::lang.components.subscriptionform.properties.successMessage.default'),
+                'title' => 'sitiosagenciadigital.subscribe::lang.components.subscriptionform.properties.successMessage.title',
+                'description' => 'sitiosagenciadigital.subscribe::lang.components.subscriptionform.properties.successMessage.description',
+                'default' => Lang::get('sitiosagenciadigital.subscribe::lang.components.subscriptionform.properties.successMessage.default'),
                 'type' => 'string',
             ],
             'category' => [
-                'title' => 'fytinnovations.userconnect::lang.components.subscriptionform.properties.category.title',
-                'description' => 'fytinnovations.userconnect::lang.components.subscriptionform.properties.category.description',
+                'title' => 'sitiosagenciadigital.subscribe::lang.components.subscriptionform.properties.category.title',
+                'description' => 'sitiosagenciadigital.subscribe::lang.components.subscriptionform.properties.category.description',
                 'type' => 'dropdown',
                 'required' => true
             ]

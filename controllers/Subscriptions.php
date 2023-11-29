@@ -1,13 +1,13 @@
 <?php
 
-namespace Fytinnovations\UserConnect\Controllers;
+namespace sitiosagenciadigital\subscribe\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
 use Flash;
 use Lang;
 use DB;
-use Fytinnovations\UserConnect\Models\Subscription;
+use sitiosagenciadigital\subscribe\Models\Subscription;
 
 /**
  * Subscriptions Back-end Controller
@@ -24,7 +24,7 @@ class Subscriptions extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Fytinnovations.UserConnect', 'userconnect', 'subscriptions');
+        BackendMenu::setContext('sitiosagenciadigital.subscribe', 'subscribe', 'subscriptions');
     }
 
     /**
@@ -39,9 +39,9 @@ class Subscriptions extends Controller
                 $subscription->delete();
             }
 
-            Flash::success(Lang::get('fytinnovations.userconnect::lang.subscriptions.delete_selected_success'));
+            Flash::success(Lang::get('sitiosagenciadigital.subscribe::lang.subscriptions.delete_selected_success'));
         } else {
-            Flash::error(Lang::get('fytinnovations.userconnect::lang.subscriptions.delete_selected_empty'));
+            Flash::error(Lang::get('sitiosagenciadigital.subscribe::lang.subscriptions.delete_selected_empty'));
         }
 
         return $this->listRefresh();

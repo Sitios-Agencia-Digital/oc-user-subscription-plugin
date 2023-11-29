@@ -1,8 +1,8 @@
 <?php
 
-namespace Fytinnovations\Userconnect\Models;
+namespace sitiosagenciadigital\subscribe\Models;
 
-use Fytinnovations\UserConnect\Models\Subscriber;
+use sitiosagenciadigital\subscribe\Models\Subscriber;
 use Model;
 use Mail;
 
@@ -16,7 +16,7 @@ class Subscription extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'fytinnovations_userconnect_subscriptions';
+    public $table = 'sad_subscribe_subscriptions';
 
     /**
      * @var array Guarded fields
@@ -125,7 +125,7 @@ class Subscription extends Model
                 "app_name" => config('app.name')
             ];
 
-            Mail::send('fytinnovations.userconnect::mail.verify_subscriber', $vars, function ($message) {
+            Mail::send('sitiosagenciadigital.subscribe::mail.verify_subscriber', $vars, function ($message) {
                 $message->to($this->subscriber->email);
             });
         }

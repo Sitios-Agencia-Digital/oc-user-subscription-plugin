@@ -1,6 +1,6 @@
 <?php
 
-namespace Fytinnovations\UserConnect\Models;
+namespace sitiosagenciadigital\subscribe\Models;
 
 use Model;
 
@@ -14,7 +14,7 @@ class Category extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'fytinnovations_userconnect_categories';
+    public $table = 'sad_subscribe_categories';
 
     /**
      * @var array Guarded fields
@@ -69,7 +69,7 @@ class Category extends Model
     public $hasMany = [];
     public $belongsTo = [];
     public $belongsToMany = [
-        'subscribers' => [Subscriber::class, 'table' => 'fytinnovations_userconnect_subscriptions', 'timestamps' => true]
+        'subscribers' => [Subscriber::class, 'table' => 'sad_subscribe_subscriptions', 'timestamps' => true]
     ];
     public $morphTo = [];
     public $morphOne = [];

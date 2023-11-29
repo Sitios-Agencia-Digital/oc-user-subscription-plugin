@@ -2,7 +2,7 @@
 #  Import/Export Behavior Config
 # ===================================
 export:
-    title: fytinnovations.userconnect::lang.subscriptions.export
+    title: sitiosagenciadigital.subscribe::lang.subscriptions.export
 
-    modelClass: Fytinnovations\UserConnect\Models\SubscriptionExport
-    list: $/fytinnovations/userconnect/models/subscription/columns.yaml
+    modelClass: sitiosagenciadigital\subscribe\Models\SubscriptionExport
+    list: $/sitiosagenciadigital\subscribe/models/subscription/columns.yaml

@@ -4,7 +4,7 @@
 
 columns:
     id:
-        label: fytinnovations.userconnect::lang.category.fields.id.label
+        label: sitiosagenciadigital.subscribe::lang.category.fields.id.label
         searchable: true
     name:
-        label: fytinnovations.userconnect::lang.category.fields.name.label
+        label: sitiosagenciadigital.subscribe::lang.category.fields.name.label

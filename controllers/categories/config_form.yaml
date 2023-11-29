@@ -6,25 +6,25 @@
 name: fytinnovations.userconnect::lang.category.label
 
 # Model Form Field configuration
-form: $/fytinnovations/userconnect/models/category/fields.yaml
+form: $/sitiosagenciadigital\subscribe/models/category/fields.yaml
 
 # Model Class name
-modelClass: Fytinnovations\UserConnect\Models\Category
+modelClass: sitiosagenciadigital\subscribe\Models\Category
 
 # Default redirect location
-defaultRedirect: fytinnovations/userconnect/categories
+defaultRedirect: sitiosagenciadigital\subscribe/categories
 
 # Create page
 create:
     title: fytinnovations.userconnect::lang.category.create_title
-    redirect: fytinnovations/userconnect/categories/update/:id
-    redirectClose: fytinnovations/userconnect/categories
+    redirect: sitiosagenciadigital\subscribe/categories/update/:id
+    redirectClose: sitiosagenciadigital\subscribe/categories
 
 # Update page
 update:
     title: fytinnovations.userconnect::lang.category.update_title
-    redirect: fytinnovations/userconnect/categories
-    redirectClose: fytinnovations/userconnect/categories
+    redirect: sitiosagenciadigital\subscribe/categories
+    redirectClose: sitiosagenciadigital\subscribe/categories
 
 # Preview page
 preview:

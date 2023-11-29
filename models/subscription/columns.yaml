@@ -4,29 +4,29 @@
 
 columns:
     id:
-        label: fytinnovations.userconnect::lang.subscription.fields.id.label
+        label: sitiosagenciadigital.subscribe::lang.subscription.fields.id.label
     email:
-        label: fytinnovations.userconnect::lang.subscription.fields.email.label
+        label: sitiosagenciadigital.subscribe::lang.subscription.fields.email.label
         relation: subscriber
         select: email
         searchable: true
     category:
-        label: fytinnovations.userconnect::lang.subscription.fields.category.label
+        label: sitiosagenciadigital.subscribe::lang.subscription.fields.category.label
         relation: category
         select: name
         searchable: true
     is_verified:
-        label: fytinnovations.userconnect::lang.subscription.fields.is_verified.label
+        label: sitiosagenciadigital.subscribe::lang.subscription.fields.is_verified.label
         type: partial
-        path: ~/plugins/fytinnovations/userconnect/models/subscription/_is_verified.htm
+        path: ~/plugins/sitiosagenciadigital\subscribe/models/subscription/_is_verified.htm
         align: center
     verified_at:
-        label: fytinnovations.userconnect::lang.subscription.fields.verified_at.label
+        label: sitiosagenciadigital.subscribe::lang.subscription.fields.verified_at.label
         type: datetime
-        default: fytinnovations.userconnect::lang.subscription.not_verified_yet
+        default: sitiosagenciadigital.subscribe::lang.subscription.not_verified_yet
     created_at:
-        label: fytinnovations.userconnect::lang.subscription.fields.created_at.label
+        label: sitiosagenciadigital.subscribe::lang.subscription.fields.created_at.label
         type: datetime
     updated_at:
-        label: fytinnovations.userconnect::lang.subscription.fields.updated_at.label
+        label: sitiosagenciadigital.subscribe::lang.subscription.fields.updated_at.label
         type: datetime

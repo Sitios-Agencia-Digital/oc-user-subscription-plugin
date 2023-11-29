@@ -1,11 +1,11 @@
 <?php
 
-namespace Fytinnovations\UserConnect;
+namespace sitiosagenciadigital\subscribe;
 
 use Backend;
 use System\Classes\PluginBase;
 use Event;
-use Fytinnovations\Userconnect\Components\SubscriptionForm;
+use sitiosagenciadigital\subscribe\Components\SubscriptionForm;
 
 /**
  * UserConnect Plugin Information File
@@ -24,9 +24,9 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'fytinnovations.userconnect::lang.plugin.name',
-            'description' => 'fytinnovations.userconnect::lang.plugin.description',
-            'author'      => 'Fytinnovations',
+            'name'        => 'sitiosagenciadigital.subscribe::lang.plugin.name',
+            'description' => 'sitiosagenciadigital.subscribe::lang.plugin.description',
+            'author'      => 'SitiosAgenciDigital',
         ];
     }
 
@@ -68,9 +68,9 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'fytinnovations.userconnect.manage_settings' => [
-                'tab' => 'fytinnovations.userconnect::lang.plugin.name',
-                'label' => 'fytinnovations.userconnect::lang.permissions.manage_settings'
+            'sitiosagenciadigital.subscribe.manage_settings' => [
+                'tab' => 'sitiosagenciadigital.subscribe::lang.plugin.name',
+                'label' => 'sitiosagenciadigital.subscribe::lang.permissions.manage_settings'
             ],
         ];
     }
@@ -79,12 +79,12 @@ class Plugin extends PluginBase
     {
         return [
             'settings' => [
-                'label'       => 'fytinnovations.userconnect::lang.settings.label',
-                'description' => 'fytinnovations.userconnect::lang.settings.description',
+                'label'       => 'sitiosagenciadigital.subscribe::lang.settings.label',
+                'description' => 'sitiosagenciadigital.subscribe::lang.settings.description',
                 'icon'        => 'icon-cog',
-                'class'       => 'Fytinnovations\UserConnect\Models\Settings',
+                'class'       => 'sitiosagenciadigital\subscribe\Models\Settings',
                 'order'       => 500,
-                'keywords'    => 'userconnect subscriptions'
+                'keywords'    => 'subscriptions'
             ]
         ];
     }
@@ -94,31 +94,31 @@ class Plugin extends PluginBase
     {
         return [
             'userconnect' => [
-                'label'       => 'fytinnovations.userconnect::lang.plugin.name',
-                'url'         => Backend::url('fytinnovations/userconnect/subscriptions'),
-                'permissions' => ['fytinnovations.userconnect.manage_settings'],
-                'iconSvg'     => 'plugins/fytinnovations/userconnect/assets/images/userconnect.svg',
+                'label'       => 'sitiosagenciadigital.subscribe::lang.plugin.name',
+                'url'         => Backend::url('sitiosagenciadigital\subscribe/subscriptions'),
+                'permissions' => ['sitiosagenciadigital.subscribe.manage_settings'],
+                'icon'        => 'icon-rss-square',
                 'sideMenu' => [
                     'subscriptions' => [
-                        'label'       => 'fytinnovations.userconnect::lang.subscriptions.menu_label',
+                        'label'       => 'sitiosagenciadigital.subscribe::lang.subscriptions.menu_label',
                         'icon'        => 'icon-volume-up',
-                        'url'         => Backend::url('fytinnovations/userconnect/subscriptions'),
+                        'url'         => Backend::url('sitiosagenciadigital\subscribe/subscriptions'),
                     ],
                     'subscribers' => [
-                        'label'       => 'fytinnovations.userconnect::lang.subscribers.menu_label',
+                        'label'       => 'sitiosagenciadigital.subscribe::lang.subscribers.menu_label',
                         'icon'        => 'icon-users',
-                        'url'         => Backend::url('fytinnovations/userconnect/subscribers'),
+                        'url'         => Backend::url('sitiosagenciadigital\subscribe/subscribers'),
                     ],
-                    'categories' => [
-                        'label'       => 'fytinnovations.userconnect::lang.categories.menu_label',
-                        'icon'        => 'icon-list',
-                        'url'         => Backend::url('fytinnovations/userconnect/categories'),
-                    ],
+                    // 'categories' => [
+                    //     'label'       => 'sitiosagenciadigital.subscribe::lang.categories.menu_label',
+                    //     'icon'        => 'icon-list',
+                    //     'url'         => Backend::url('sitiosagenciadigital\subscribe/categories'),
+                    // ],
                     'settings' => [
-                        'label'       => 'fytinnovations.userconnect::lang.settings.menu_label',
+                        'label'       => 'sitiosagenciadigital.subscribe::lang.settings.menu_label',
                         'icon'        => 'icon-cog',
-                        'url'         => Backend::url('system/settings/update/fytinnovations/userconnect/settings'),
-                        'permissions' => ['fytinnovations.userconnect.manage_settings'],
+                        'url'         => Backend::url('system/settings/update/sitiosagenciadigital\subscribe/settings'),
+                        'permissions' => ['sitiosagenciadigital.subscribe.manage_settings'],
                     ]
                 ]
             ]
@@ -128,7 +128,7 @@ class Plugin extends PluginBase
     public function registerMailTemplates()
     {
         return [
-            'fytinnovations.userconnect::mail.verify_subscriber',
+            'sitiosagenciadigital.subscribe::mail.verify_subscriber',
         ];
     }
 }

@@ -4,11 +4,11 @@
 
 fields:
     verify_emails:
-        label: fytinnovations.userconnect::lang.settings.fields.verify_emails.label
-        comment: fytinnovations.userconnect::lang.settings.fields.verify_emails.comment
+        label: sitiosagenciadigital.subscribe::lang.settings.fields.verify_emails.label
+        comment: sitiosagenciadigital.subscribe::lang.settings.fields.verify_emails.comment
         type: switch
     key_expires_in:
-        label: fytinnovations.userconnect::lang.settings.fields.key_expires_in.label
+        label: sitiosagenciadigital.subscribe::lang.settings.fields.key_expires_in.label
         type: number
         default: 1
         span: left
@@ -17,10 +17,10 @@ fields:
             field: verify_emails
             condition: checked
     verification_success_page:
-        label: fytinnovations.userconnect::lang.settings.fields.verification_success_page.label
+        label: sitiosagenciadigital.subscribe::lang.settings.fields.verification_success_page.label
         type: dropdown
         span: left
-        comment: fytinnovations.userconnect::lang.settings.fields.verification_success_page.comment
+        comment: sitiosagenciadigital.subscribe::lang.settings.fields.verification_success_page.comment
         trigger:
             action: show
             field: verify_emails

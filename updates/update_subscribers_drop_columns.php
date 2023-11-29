@@ -1,18 +1,18 @@
 <?php
 
-namespace Fytinnovations\UserConnect\Updates;
+namespace sitiosagenciadigital\subscribe\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
 use DB;
-use Fytinnovations\UserConnect\Models\Category;
-use Fytinnovations\UserConnect\Models\Subscriber;
-use Fytinnovations\LaravelTopping\Traits\MigrationHelper;
+use sitiosagenciadigital\subscribe\Models\Category;
+use sitiosagenciadigital\subscribe\Models\Subscriber;
+// use sitiosagenciadigital\LaravelTopping\Traits\MigrationHelper;
 
 class UpdateSubscribersDropColumns extends Migration
 {
-    use MigrationHelper;
+    // use MigrationHelper;
 
     public function up()
     {
@@ -29,17 +29,17 @@ class UpdateSubscribersDropColumns extends Migration
             ]);
         }
 
-        $this->dropColumnsIfExists('fytinnovations_userconnect_subscribers', [
-            'verification_key',
-            'is_verified',
-            'verified_at',
-            'valid_till'
-        ]);
+        Schema::table('sad_subscribe_subscribers', function (Blueprint $table) {
+            $table->dropColumn('verification_key');
+            $table->dropColumn('is_verified')->default(0);
+            $table->dropColumn('verified_at')->nullable();
+            $table->dropColumn('valid_till');
+        });
     }
 
     public function down()
     {
-        Schema::table('fytinnovations_userconnect_subscribers', function (Blueprint $table) {
+        Schema::table('sad_subscribe_subscribers', function (Blueprint $table) {
             $table->string('verification_key');
             $table->boolean('is_verified')->default(0);
             $table->datetime('verified_at')->nullable();

@@ -1,6 +1,6 @@
 <?php
 
-namespace Fytinnovations\UserConnect\Controllers;
+namespace sitiosagenciadigital\subscribe\Controllers;
 
 use BackendMenu;
 
@@ -14,6 +14,6 @@ class Subscribers extends \Backend\Classes\Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Fytinnovations.UserConnect', 'userconnect', 'subscribers');
+        BackendMenu::setContext('sitiosagenciadigital.subscribe', 'subscribe', 'subscribers');
     }
 }

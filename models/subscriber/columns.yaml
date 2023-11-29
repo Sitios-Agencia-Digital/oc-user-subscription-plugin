@@ -4,13 +4,13 @@
 
 columns:
     id:
-        label: fytinnovations.userconnect::lang.subscriber.fields.id.label
+        label: sitiosagenciadigital.subscribe::lang.subscriber.fields.id.label
     email:
-        label: fytinnovations.userconnect::lang.subscriber.fields.email.label
+        label: sitiosagenciadigital.subscribe::lang.subscriber.fields.email.label
         searchable: true
     created_at:
-        label: fytinnovations.userconnect::lang.subscriber.fields.created_at.label
+        label: sitiosagenciadigital.subscribe::lang.subscriber.fields.created_at.label
         type: datetime
     updated_at:
-        label: fytinnovations.userconnect::lang.subscriber.fields.updated_at.label
+        label: sitiosagenciadigital.subscribe::lang.subscriber.fields.updated_at.label
         type: datetime

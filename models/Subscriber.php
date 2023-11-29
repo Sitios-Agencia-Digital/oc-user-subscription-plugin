@@ -1,8 +1,8 @@
 <?php
 
-namespace Fytinnovations\UserConnect\Models;
+namespace sitiosagenciadigital\subscribe\Models;
 
-use Fytinnovations\Userconnect\Models\Subscription;
+use sitiosagenciadigital\subscribe\Models\Subscription;
 use Model;
 use Mail;
 
@@ -15,10 +15,10 @@ class Subscriber extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'fytinnovations_userconnect_subscribers';
+    public $table = 'sad_subscribe_subscribers';
 
     public $rules = [
-        'email'    => 'required|between:6,255|email|unique:fytinnovations_userconnect_subscribers',
+        'email'    => 'required|between:6,255|email|unique:sad_subscribe_subscribers',
     ];
 
     /**
@@ -43,7 +43,7 @@ class Subscriber extends Model
         'category' => Subscriber::class
     ];
     public $belongsToMany = [
-        'categories' => [Subscriber::class, 'table' => 'fytinnovations_userconnect_subscriptions', 'timestamps' => true]
+        'categories' => [Subscriber::class, 'table' => 'sad_subscribe_subscriptions', 'timestamps' => true]
     ];
     public $morphTo = [];
     public $morphOne = [];

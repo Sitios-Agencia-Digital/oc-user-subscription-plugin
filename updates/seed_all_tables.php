@@ -1,8 +1,8 @@
 <?php
 
-namespace Fytinnovations\UserConnect\Updates;
+namespace sitiosagenciadigital\subscribe\Updates;
 
-use Fytinnovations\UserConnect\Models\Category;
+use sitiosagenciadigital\subscribe\Models\Category;
 use October\Rain\Database\Updates\Seeder;
 
 class SeedAllTables extends Seeder
