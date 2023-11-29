@@ -17,20 +17,6 @@ class Plugin extends PluginBase
     ];
 
     /**
-     * Returns information about this plugin.
-     *
-     * @return array
-     */
-    public function pluginDetails()
-    {
-        return [
-            'name'        => 'sitiosagenciadigital.subscribe::lang.plugin.name',
-            'description' => 'sitiosagenciadigital.subscribe::lang.plugin.description',
-            'author'      => 'sitiosagencidigital',
-        ];
-    }
-
-    /**
      * Register method, called when the plugin is first registered.
      *
      * @return void

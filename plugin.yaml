@@ -1,0 +1,5 @@
+plugin:
+    name: 'sitiosagenciadigital.subscribe::lang.plugin.name'
+    description: 'sitiosagenciadigital.subscribe::lang.plugin.description'
+    author: sitiosagenciadigital
+    icon: oc-icon-credit-card
