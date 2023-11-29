@@ -26,7 +26,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'sitiosagenciadigital.subscribe::lang.plugin.name',
             'description' => 'sitiosagenciadigital.subscribe::lang.plugin.description',
-            'author'      => 'SitiosAgenciDigital',
+            'author'      => 'sitiosagencidigital',
         ];
     }
 
