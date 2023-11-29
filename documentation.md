@@ -1,5 +1,3 @@
-For complete documentation of the plugin visit https://oc-user-connect.fytinnovations.com/
-
 # Components
 
 ## SubscriptionForm component
