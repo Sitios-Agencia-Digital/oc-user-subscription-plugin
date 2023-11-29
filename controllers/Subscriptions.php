@@ -1,13 +1,13 @@
 <?php
 
-namespace sitiosagenciadigital\subscribe\Controllers;
+namespace SitiosAgenciaDigital\Subscribe\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
 use Flash;
 use Lang;
 use DB;
-use sitiosagenciadigital\subscribe\Models\Subscription;
+use SitiosAgenciaDigital\Subscribe\Models\Subscription;
 
 /**
  * Subscriptions Back-end Controller

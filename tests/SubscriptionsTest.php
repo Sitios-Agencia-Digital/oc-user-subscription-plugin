@@ -1,6 +1,6 @@
 <?php
 
-namespace Fytinnovations\UserConnect\Tests;
+namespace SitiosAgenciaDigital\Subscribe\Tests;
 
 use PluginTestCase;
 

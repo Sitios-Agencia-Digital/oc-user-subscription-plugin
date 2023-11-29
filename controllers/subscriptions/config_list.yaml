@@ -4,7 +4,7 @@
 
 title: sitiosagenciadigital.subscribe::lang.subscription.list_title
 list: ~/plugins/sitiosagenciadigital/subscribe/models/subscription/columns.yaml
-modelClass: sitiosagenciadigital\subscribe\Models\Subscription
+modelClass: SitiosAgenciaDigital\Subscribe\Models\Subscription
 noRecordsMessage: backend::lang.list.no_records
 recordsPerPage: 10
 showCheckboxes: true

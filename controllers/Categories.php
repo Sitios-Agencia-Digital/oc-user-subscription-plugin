@@ -1,10 +1,10 @@
-<?php namespace sitiosagenciadigital\subscribe\Controllers;
+<?php namespace SitiosAgenciaDigital\Subscribe\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
 use Flash;
 use Lang;
-use sitiosagenciadigital\subscribe\Models\Category;
+use SitiosAgenciaDigital\Subscribe\Models\Category;
 
 /**
  * Categories Back-end Controller

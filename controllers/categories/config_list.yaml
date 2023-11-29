@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/sitiosagenciadigital\subscribe/models/category/columns.yaml
+list: $/SitiosAgenciaDigital\Subscribe/models/category/columns.yaml
 
 # Model Class name
-modelClass: sitiosagenciadigital\subscribe\Models\Category
+modelClass: SitiosAgenciaDigital\Subscribe\Models\Category
 
 # List Title
 title: fytinnovations.userconnect::lang.category.list_title
 
 # Link URL for each record
-recordUrl: sitiosagenciadigital\subscribe/categories/update/:id
+recordUrl: SitiosAgenciaDigital\Subscribe/categories/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

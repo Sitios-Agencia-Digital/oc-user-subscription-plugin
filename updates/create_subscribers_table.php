@@ -1,4 +1,4 @@
-<?php namespace Fytinnovations\UserConnect\Updates;
+<?php namespace SitiosAgenciaDigital\Subscribe\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
