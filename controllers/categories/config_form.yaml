@@ -3,29 +3,29 @@
 # ===================================
 
 # Record name
-name: fytinnovations.userconnect::lang.category.label
+name: sitiosagenciadigital.subscribe::lang.category.label
 
 # Model Form Field configuration
-form: $/SitiosAgenciaDigital\Subscribe/models/category/fields.yaml
+form: $/sitiosagenciadigital/subscribe/models/category/fields.yaml
 
 # Model Class name
 modelClass: SitiosAgenciaDigital\Subscribe\Models\Category
 
 # Default redirect location
-defaultRedirect: SitiosAgenciaDigital\Subscribe/categories
+defaultRedirect: sitiosagenciadigital/subscribe/categories
 
 # Create page
 create:
-    title: fytinnovations.userconnect::lang.category.create_title
-    redirect: SitiosAgenciaDigital\Subscribe/categories/update/:id
-    redirectClose: SitiosAgenciaDigital\Subscribe/categories
+    title: sitiosagenciadigital.subscribe::lang.category.create_title
+    redirect: sitiosagenciadigital/subscribe/categories/update/:id
+    redirectClose: sitiosagenciadigital/subscribe/categories
 
 # Update page
 update:
-    title: fytinnovations.userconnect::lang.category.update_title
-    redirect: SitiosAgenciaDigital\Subscribe/categories
-    redirectClose: SitiosAgenciaDigital\Subscribe/categories
+    title: sitiosagenciadigital.subscribe::lang.category.update_title
+    redirect: sitiosagenciadigital/subscribe/categories
+    redirectClose: sitiosagenciadigital/subscribe/categories
 
 # Preview page
 preview:
-    title: fytinnovations.userconnect::lang.category.preview_title
+    title: sitiosagenciadigital.subscribe::lang.category.preview_title
