@@ -12,3 +12,5 @@
   - update_subscribers_drop_columns.php
 2.0.2:
   - Bug Fix Related to Migrations
+2.0.3:
+  - Bug Fix Related to Routes and Langs

@@ -23,7 +23,7 @@ Route::get('/email_verification/{email}/{verification_key}', function ($email, $
 
         $verificationSuccessPage = Settings::get('verification_success_page');
 
-        Flash::success(Lang::get('fytinnovations.userconnect::lang.mail.user_verified_successfully'));
+        Flash::success(Lang::get('sitiosagenciadigital.subscribe::lang.mail.user_verified_successfully'));
 
         return app(Controller::class)->run($verificationSuccessPage);
     }

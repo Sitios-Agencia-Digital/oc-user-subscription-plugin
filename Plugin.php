@@ -81,29 +81,29 @@ class Plugin extends PluginBase
         return [
             'userconnect' => [
                 'label'       => 'sitiosagenciadigital.subscribe::lang.plugin.name',
-                'url'         => Backend::url('SitiosAgenciaDigital\Subscribe/subscriptions'),
+                'url'         => Backend::url('sitiosagenciadigital/subscribe/subscriptions'),
                 'permissions' => ['sitiosagenciadigital.subscribe.manage_settings'],
                 'icon'        => 'icon-rss-square',
                 'sideMenu' => [
                     'subscriptions' => [
                         'label'       => 'sitiosagenciadigital.subscribe::lang.subscriptions.menu_label',
                         'icon'        => 'icon-volume-up',
-                        'url'         => Backend::url('SitiosAgenciaDigital\Subscribe/subscriptions'),
+                        'url'         => Backend::url('sitiosagenciadigital/subscribe/subscriptions'),
                     ],
                     'subscribers' => [
                         'label'       => 'sitiosagenciadigital.subscribe::lang.subscribers.menu_label',
                         'icon'        => 'icon-users',
-                        'url'         => Backend::url('SitiosAgenciaDigital\Subscribe/subscribers'),
+                        'url'         => Backend::url('sitiosagenciadigital/subscribe/subscribers'),
                     ],
                     // 'categories' => [
                     //     'label'       => 'sitiosagenciadigital.subscribe::lang.categories.menu_label',
                     //     'icon'        => 'icon-list',
-                    //     'url'         => Backend::url('SitiosAgenciaDigital\Subscribe/categories'),
+                    //     'url'         => Backend::url('sitiosagenciadigital/subscribe/categories'),
                     // ],
                     'settings' => [
                         'label'       => 'sitiosagenciadigital.subscribe::lang.settings.menu_label',
                         'icon'        => 'icon-cog',
-                        'url'         => Backend::url('system/settings/update/SitiosAgenciaDigital\Subscribe/settings'),
+                        'url'         => Backend::url('system/settings/update/sitiosagenciadigital/subscribe/settings'),
                         'permissions' => ['sitiosagenciadigital.subscribe.manage_settings'],
                     ]
                 ]

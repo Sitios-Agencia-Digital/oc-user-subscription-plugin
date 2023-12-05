@@ -5,4 +5,4 @@ export:
     title: sitiosagenciadigital.subscribe::lang.subscriptions.export
 
     modelClass: SitiosAgenciaDigital\Subscribe\Models\SubscriptionExport
-    list: $/SitiosAgenciaDigital\Subscribe/models/subscription/columns.yaml
+    list: $/sitiosagenciadigital/subscribe/models/subscription/columns.yaml
